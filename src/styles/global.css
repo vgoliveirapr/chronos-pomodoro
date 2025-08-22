@@ -1,0 +1,11 @@
+/*Css da página global*/
+
+body {
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
+/*Utilizando variável de css var(--NomeVariável)*/
+h1 {
+  color: var(--primary);
+}

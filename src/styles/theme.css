@@ -1,0 +1,8 @@
+/*Criando variáveis --NomeDaVariável
+:root => Variáveis Globais
+.card | .h1 => Variáveis específicas para o tipo da tag html dele
+*/
+
+:root {
+  --primary: pink;
+}
