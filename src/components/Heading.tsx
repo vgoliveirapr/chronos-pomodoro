@@ -5,6 +5,10 @@
 /* Importando um css modular - Exclusivo pode criar classes de css com o mesmo nome separar por modulos */
 import styles from './Heading.module.css';
 
-export function Heading() {
-  return <h1 className={styles.heading}>Olá Mundo!</h1>;
+/*Usando Children do componente => Valor dentro das tags do Html
+  Nas dentro das tags <> são atributos
+*/
+export function Heading(props) {
+  console.log(props.attr);
+  return <h1 className={styles.heading}>{props.children}</h1>;
 }
