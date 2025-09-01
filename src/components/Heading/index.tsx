@@ -3,7 +3,7 @@
 */
 
 /* Importando um css modular - Exclusivo pode criar classes de css com o mesmo nome separar por modulos */
-import styles from './Heading.module.css';
+import styles from './styles.module.css';
 
 /* Usando tipagem para os componentes nesse caso seria o props, garantindo que vai vir o valor correto
    Da pra usar pra garantir que vai vir os valores pro componente

@@ -1,8 +1,7 @@
-import { Heading } from './components/Heading';
-
 import './styles/theme.css';
 import './styles/global.css';
-import { TimerIcon } from 'lucide-react';
+import { Container } from './components/Container';
+import { Heading } from './components/Heading';
 
 export function App() {
   return (
@@ -16,13 +15,13 @@ export function App() {
           Olá Mundo 2!
         </Heading>
       */}
-      <Heading>
-        Olá Mundo 2!
-        <button>
-          <TimerIcon />
-        </button>
-      </Heading>
-      <p>AAAAAAAAAAA</p>
+      <Container>
+        <Heading>Logo</Heading>
+      </Container>
+
+      <Container>
+        <Heading>Menu</Heading>
+      </Container>
     </>
   );
 }
