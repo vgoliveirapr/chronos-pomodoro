@@ -1,11 +1,11 @@
 import { Container } from './components/Container';
 import { Logo } from './components/Logo';
 
-import './styles/theme.css';
-import './styles/global.css';
-import { Menu } from './components/Menu';
 import { CountDown } from './components/CountDown';
 import { DefaultInput } from './components/DefaultInput';
+import { Menu } from './components/Menu';
+import './styles/global.css';
+import './styles/theme.css';
 
 export function App() {
   return (
@@ -34,7 +34,13 @@ export function App() {
       <Container>
         <form className='form' action=''>
           <div className='formRow'>
-            <DefaultInput id='meuInput' labelText='Task:' type='text' />
+            <DefaultInput
+              id='meuInput'
+              labelText='Task:'
+              type='text'
+              placeholder='Digite algo'
+              defaultValue='Valor preenchido'
+            />
           </div>
           <div className='formRow'>
             <p>Lorem ipsum dolor sit amet.</p>
