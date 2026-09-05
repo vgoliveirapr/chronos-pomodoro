@@ -1,9 +1,13 @@
+/*Importando meus componentes criados*/
+import { PlayCircleIcon } from 'lucide-react';
 import { Container } from './components/Container';
-import { Logo } from './components/Logo';
-
 import { CountDown } from './components/CountDown';
+import { Cycles } from './components/Cycles';
+import { DefaultButton } from './components/DefaultButton';
 import { DefaultInput } from './components/DefaultInput';
+import { Logo } from './components/Logo';
 import { Menu } from './components/Menu';
+
 import './styles/global.css';
 import './styles/theme.css';
 
@@ -47,12 +51,11 @@ export function App() {
           </div>
 
           <div className='formRow'>
-            <p>Ciclos</p>
-            <p>0 0 0 0 0</p>
+            <Cycles />
           </div>
 
           <div className='formRow'>
-            <button>Iniciar</button>
+            <DefaultButton icon={<PlayCircleIcon />} color='green' />
           </div>
         </form>
       </Container>
